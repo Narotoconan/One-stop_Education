@@ -1,0 +1,24 @@
+@import '../position.less';
+@import "webLogo";
+@import "navList";
+@import "search";
+@import "login";
+
+@navBar:100px;
+@themeColor: #e37426;
+
+#navBar{
+  height: @navBar;
+  background-color: rgba(255,255,255,.5);
+  backdrop-filter: blur(25px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+  width: 100%;
+  z-index: 999;
+  .t-center()
+}
+.navOne{
+  .l-center();
+}
+.navTwo{
+  .r-center();
+}

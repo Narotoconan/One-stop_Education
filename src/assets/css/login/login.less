@@ -1,0 +1,102 @@
+@import "../position";
+@import "userLogin";
+@import "adminLogin";
+@import "sign";
+
+.login {
+  //background-color: #f2f3f5;
+  background: url("../../../assets/img/login/loginBg.png") no-repeat center;
+  background-size: cover;
+}
+
+.loginCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 50%;
+  height: 35rem;
+  background-color: #f9fafc;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px rgba(133, 133, 133, 0.1);
+
+  > div {
+    display: inline-block;
+  }
+
+  .cardLeft {
+    width: 60%;
+    padding: 2rem;
+
+    .logo {
+      height: 60px;
+    }
+
+    .logoAside {
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
+
+  .cardRight {
+    width: 40%;
+    vertical-align: top;
+    padding: 2rem;
+
+    .loginInput {
+      margin-top: 2rem;
+    }
+  }
+  .loginTitle {
+    font-family: 宋体;
+    font-size: 1.85rem;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+  }
+
+  .description {
+    letter-spacing: 1.25px;
+
+    span {
+      vertical-align: top;
+      color: #e3a96a;
+    }
+  }
+ .input {
+  height: 5rem;
+  background-color: #fff;
+  position: relative;
+
+  > div {
+    .c-center();
+    width: 90%;
+
+    i {
+      font-size: 1.85rem;
+      vertical-align: top;
+      color: #dadada;
+    }
+
+    small {
+      font-weight: 600;
+      letter-spacing: 1.15px;
+    }
+
+    input {
+      outline: none;
+      border: none;
+      height: 1.5rem;
+    }
+  }
+}
+
+  input::-webkit-input-placeholder {
+    font-size: 0.8rem;
+    color: #bbbbbb;
+  }
+
+  .iconColor{
+    color: #f3d79a !important;
+  }
+}

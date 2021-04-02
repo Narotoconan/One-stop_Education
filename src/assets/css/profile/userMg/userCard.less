@@ -1,0 +1,48 @@
+.avatar {
+  box-sizing: border-box;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  padding: 4px;
+  margin-left: 14px;
+  border: 2px solid #e0e0e0;
+}
+#toAvatar{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 14px;
+  background-color: rgba(0,0,0,.0);
+  transition: all 0.5s;
+  >div{
+    .c-center();
+    color: white;
+    opacity: 0;
+  }
+}
+#toAvatar:hover{
+  background-color: rgba(0,0,0,.5);
+  >div{
+    opacity: 1;
+  }
+}
+
+.userCardName {
+  > span {
+    font-size: 1.75rem;
+
+  }
+}
+.el-dialog{
+  width: 600px;
+  border-radius: 20px;
+}
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: @themeColor;
+  background: @themeColor;
+}
+.el-radio__input.is-checked+.el-radio__label {
+  color: @themeColor;
+}

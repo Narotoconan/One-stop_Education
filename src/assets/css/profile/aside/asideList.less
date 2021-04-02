@@ -1,0 +1,34 @@
+.el-aside{
+  border-radius: 15px;
+
+}
+.asideList{
+  width: 100%;
+  height: 300px;
+  padding-left: 0;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 0;
+  cursor: default;
+  display: flex;
+  li{
+    flex: 1;
+    text-align: center;
+    position: relative;
+    >div{
+      .c-center();
+      width: 100%;
+    }
+    i{
+      font-size: 1.65rem;
+      vertical-align: bottom;
+      margin-right: 10px;
+    }
+  }
+  li:hover{
+    color: @themeColor;
+  }
+}
+.active{
+  color: @themeColor;
+}

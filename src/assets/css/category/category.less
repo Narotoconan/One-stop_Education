@@ -1,0 +1,34 @@
+@import "../position";
+@import "categoryNav";
+
+.category{
+  background-color: #F2F6FC;
+  cursor: default;
+  .el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #ffb259;
+    color: #FFF;
+  }
+  .el-pagination.is-background .el-pager li:not(.disabled,.active):hover {
+    color: #ffb259;
+  }
+}
+.categoryBg{
+  height: 180px;
+  position: relative;
+  background: #F2F6FC no-repeat center;
+  background-size: cover;
+  cursor: default;
+  .mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.15);
+    backdrop-filter: blur(30px);
+  }
+  .content{
+    .c-center();
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 宋体;
+    color: #fff;
+  }
+}

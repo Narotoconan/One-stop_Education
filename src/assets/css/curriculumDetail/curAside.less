@@ -1,0 +1,54 @@
+.curAside{
+  >div{
+    border-radius: 15px;
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 15px 30px rgba(190, 190, 190, 0.1);
+  }
+  small{
+    text-align: justify;
+    text-indent:2rem;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .teacherCard{
+    height: 12rem;
+    img{
+      height: 3.5rem;
+      width: 3.5rem;
+      border-radius: 50%;
+    }
+    span{
+      margin-left: 1rem;
+      font-size: 1.65rem;
+    }
+    small{
+      height: 55px;
+      -webkit-line-clamp: 3;  //显示几行
+    }
+  }
+  .desCard{
+    height: 22rem;
+    margin-top: 1rem;
+    .title{
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      i{
+        font-size: 1.55rem;
+        vertical-align: revert;
+        color: #e37426;
+      }
+      span{
+        margin-left: 0.5rem;
+      }
+    }
+    small{
+      height: 15.5rem;
+      -webkit-line-clamp: 13;  //显示几行
+      letter-spacing: 0.15rem;
+    }
+  }
+}

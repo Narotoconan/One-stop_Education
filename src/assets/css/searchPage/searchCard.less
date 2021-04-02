@@ -1,0 +1,56 @@
+.searchCard{
+  height: 14rem;
+  border-top: 1px solid #ededed;
+  position: relative;
+  .item{
+    .c-center();
+    height: 70%;
+    width: 100%;
+    img{
+      height: 100%;
+      max-width: 292.3px;
+      border-radius: 15px;
+      vertical-align: top;
+    }
+    .curTitle{
+      font-size: 1.15rem;
+      font-weight: 600;
+      word-break: break-all;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+    }
+    .curTitle:hover{
+      color: #e37426;
+    }
+    small{
+      text-align: justify;
+      word-break: break-all;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      letter-spacing: 0.105rem ;
+    }
+    .cardB{
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+      .el-avatar{
+        vertical-align: bottom;
+      }
+    }
+    .itemDate,.itemCate{
+      display: inline-block;
+      margin-left: 3rem;
+    }
+    .itemDate{
+      .c-center();
+      margin-left: 0;
+    }
+  }
+}

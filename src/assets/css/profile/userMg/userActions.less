@@ -1,0 +1,34 @@
+.userActions{
+  height: 30rem;
+  .row{
+    >div{
+      padding: 0 !important;
+      margin: 1rem;
+      box-sizing: border-box;
+      background-color: #f3f5fb;
+      border: 2px solid #f3f5fb;
+      border-radius: 15px;
+      position: relative;
+    }
+    >div:hover{
+      border-color: @themeColor;
+      .actionsItem{
+        h5,.mt-2{
+          color:@themeColor;
+        }
+      }
+    }
+  }
+}
+.actionsItem{
+  .c-center();
+  height: 80%;
+  width: 80%;
+  div,h5{
+    text-align: center;
+  }
+  i{
+    font-size: 2.5rem;
+    vertical-align: middle;
+  }
+}

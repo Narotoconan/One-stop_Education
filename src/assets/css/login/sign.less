@@ -1,0 +1,26 @@
+@borderRa:10px;
+.sign{
+  .loginTitle{
+    margin-bottom: 2rem !important;
+  }
+  .el-radio__input.is-checked .el-radio__inner {
+    border-color: #e3a96a;
+    background: #e3a96a;
+  }
+  .el-radio__inner:hover{
+    border-color: #e3a96a;
+  }
+  .el-radio__input.is-checked+.el-radio__label {
+    color: #e3a96a;
+  }
+  .signForm{
+    box-shadow: 0 5px 30px rgba(190, 190, 190, 0.1);
+    border-radius: @borderRa;
+    .userName{
+      border-radius: @borderRa @borderRa 0 0;
+    }
+    .userGender{
+      border-radius: 0 0 @borderRa @borderRa;
+    }
+  }
+}

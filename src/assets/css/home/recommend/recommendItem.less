@@ -1,0 +1,26 @@
+@radius:10px;
+.recommendItem{
+  transition: all 0.35s;
+  img{
+    border-radius: @radius @radius 0 0;
+  }
+  .card{
+    border-radius: @radius;
+  }
+  .card-title{
+    font-family: "Hiragino Sans GB", sans-serif;
+  }
+  .el-avatar{
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
+.recommendItem:hover{
+  transform: translate(0,-2.5%);
+  .card{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+  }
+  .card-title{
+    color: @themeColor;
+  }
+}

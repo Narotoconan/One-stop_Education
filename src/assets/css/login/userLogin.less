@@ -1,0 +1,33 @@
+@borderRa:10px;
+.userLogin{
+  .title{
+    font-family: 宋体;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  .inputGroup{
+    box-shadow: 0 5px 30px rgba(190, 190, 190, 0.1);
+    border-radius: @borderRa;
+    .user{
+      border-radius: @borderRa @borderRa 0 0;
+      //border-bottom: 2px solid #f1f1f1;
+
+    }
+    .password{
+      border-radius: 0 0 @borderRa @borderRa;
+    }
+  }
+  .toSubmit{
+
+  }
+  .el-checkbox__inner:hover{
+    border-color: #E6A23C;
+  }
+  .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: #E6A23C;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #E6A23C;
+    border-color: #E6A23C;
+  }
+}

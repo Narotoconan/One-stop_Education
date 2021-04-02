@@ -1,0 +1,84 @@
+@videoWidth:60rem;
+@min-introduction:20rem;
+.videoMessage{
+  background-color: #f3f5fb;
+}
+.videoBox{
+  width: 100%;
+  height: @videoWidth * 0.6;
+}
+.videoInfo{
+  .el-button{
+    margin-right: 1rem;
+    font-size: 0.9rem;
+  }
+}
+.introduction{
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 2rem;
+  cursor: default;
+  >div{
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .intCard{
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+  .description{
+    min-height: @min-introduction;
+    border-radius: 15px;
+    padding-bottom: 6rem;
+    background: url("../../../assets/img/test/jianjie.png") no-repeat white right bottom;
+    box-shadow: 0 15px 30px rgba(120, 120, 120, 0.1);
+    background-size: cover;
+    .intCard{
+      margin: 1.5rem;
+    }
+    .title{
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    p{
+      text-align: justify;
+      text-indent:2rem;
+      line-height: 2rem;
+    }
+  }
+  .teacher{
+    position: relative;
+    .intCard{
+      position: absolute;
+      right: 0;
+      top:0;
+      width: 95%;
+      height: @min-introduction;
+      background-color: #fff;
+      box-shadow: 0 15px 30px rgba(120, 120, 120, 0.1);
+      .tBorder{
+        .c-center();
+        text-align: center;
+      }
+      img{
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        padding: 5px;
+        border: 2px solid #e0e0e0;
+      }
+      small{
+        text-align: justify;
+        text-indent:2rem;
+        height: 76px;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;  //显示几行
+        overflow: hidden;
+      }
+    }
+  }
+}

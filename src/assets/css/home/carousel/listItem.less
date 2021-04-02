@@ -1,0 +1,49 @@
+.listItem{
+  .c-center();
+  width: 100%;
+  img{
+    height: 2.5rem;
+  }
+  span{
+    font-family: "宋体";
+    color: #3d3d3d;
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+}
+.listContentBorder{
+  position: absolute;
+  right: 11.5rem;
+  height: 22rem;
+  width: 30rem;
+  display: none;
+}
+.listContent{
+  width: 98%;
+  height: 100%;
+  background-color: rgb(255,255,255);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+  .col{
+    margin: 0.7rem;
+    background-color: rgba(245,245,248,.97);
+    border: 2px solid #f5f5f8;
+    border-radius: 10px;
+    text-align: center;
+    small{
+      font-size: 0.75rem;
+    }
+  }
+  .col:hover{
+    border: 2px solid @themeColor;
+  }
+  .col img{
+    height: 5rem;
+  }
+  .col h5{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #646464;
+  }
+}

@@ -1,0 +1,57 @@
+.curList{
+  border-radius: 15px;
+  padding: 2rem;
+  .title{
+    font-size: 1.5rem;
+    i{
+      color: #43dde6;
+      vertical-align: revert;
+    }
+    span{
+      font-size: 1.25rem;
+      margin-left: 0.7rem;
+    }
+  }
+  .theList{
+    padding-left: 0;
+    border: 1px solid #efefef;
+    border-radius: 15px;
+    li{
+      position: relative;
+      height: 5rem;
+      i{
+        vertical-align: revert;
+        font-size: 1.1rem;
+      }
+      >div{
+        .r-center();
+        width: 95.5%;
+        .watch{
+          .r-center(1rem);
+          opacity: 0;
+        }
+      }
+    }
+    li:hover{
+      color: #f3c381;
+    }
+    li:nth-of-type(even){
+      background-color: #f8f8f8;
+    }
+  }
+  .none{
+    height: 100% - 8rem;
+    line-height: 100% - 8rem;
+    background-color: #f2f5f8;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    >div{
+      width: 90%;
+      color: rgba(0,0,0,.1);
+      letter-spacing: 0.5rem;
+      .c-center();
+      font-size: 4rem;
+    }
+  }
+}

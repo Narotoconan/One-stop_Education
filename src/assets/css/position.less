@@ -1,0 +1,26 @@
+.c-center(){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.l-center(@left:0){
+  position: absolute;
+  left: @left;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.r-center(@right:0){
+  position: absolute;
+  right: @right;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.t-center(@top:0){
+  position: absolute;
+  top: @top;
+}
+.b-center(@bottom:0){
+  position: absolute;
+  bottom: @bottom;
+}

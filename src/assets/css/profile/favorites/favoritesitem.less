@@ -1,0 +1,59 @@
+.favoritesCard{
+  display: inline-block;
+  height: 9rem;
+  width: 100%;
+  background-color: #eff4f7;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+  cursor: default;
+  box-sizing: border-box;
+  border: 2px solid #eff4f7;
+  transition: all 0.5s;
+  box-shadow: 0 5px 10px rgba(75, 75, 75, 0.08);
+  img{
+    height: 100% ;
+    border-radius: 10px;
+    vertical-align: top;
+  }
+  .cardContent{
+    width: 55%;
+    height: 100%;
+    position: relative;
+  }
+  .cardTitle{
+    font-weight: 700;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  i{
+    font-size: 1.35rem;
+    margin-right: 5px;
+  }
+  .cardFooter{
+    .b-center();
+    width: 100%;
+    span{
+      vertical-align: middle;
+    }
+  }
+  .favoritesDelete{
+    .r-center(1rem);
+    color: #e4e4e4;
+    transition: color 0.5s;
+  }
+  .favoritesDelete:hover{
+    color: #ff574f;
+  }
+  .el-tag{
+    text-align: center;
+    width: 5rem;
+  }
+}
+.favoritesCard:hover{
+  border-color: #e3a96a;
+  .cardTitle{
+    color: #e3a96a;
+  }
+}
